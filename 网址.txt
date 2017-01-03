@@ -1,0 +1,15 @@
+http://guba.eastmoney.com/list,600060.html
+
+scrapy crawl comment_spider -a id=1 -a do_action=yes
+
+
+
+--logfile log.txt
+
+
+python manage.py dumpdata comment_scraper > cdump.json
+
+python manage.py dumpdata dynamic_scraper > cdump.json
+
+
+3.20

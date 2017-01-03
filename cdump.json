@@ -1,0 +1,1 @@
+[{"model": "comment_scraper.newswebsite", "pk": 1, "fields": {"name": "East Weath", "url": "http://guba.eastmoney.com", "scraper": 1, "scraper_runtime": null}}]
