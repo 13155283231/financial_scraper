@@ -24,7 +24,7 @@ ITEM_PIPELINES = {
 # in order to Remove duplicates
 # DUPEFILTER_CLASS = 'comment_scraper.scraper.duplicate_filter.CustomFilter'
 
-# CONCURRENT_REQUESTS=32
+##CONCURRENT_REQUESTS=200
 
 CONCURRENT_ITEMS=200					# big num, this can improve speed of scrape #defaut=100
 
