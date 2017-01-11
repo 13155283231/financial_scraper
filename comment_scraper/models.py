@@ -16,6 +16,14 @@ class NewsWebsite(models.Model):                        # The name of the site t
     def __unicode__(self):
         return self.name
 
+# sentiment analysis result
+class Analysis(models.Model):
+    stock_code = models.IntegerField(default=None)
+    stock_name = models.CharField(max_length=20)
+    pos_degree = models.FloatField(default=None)
+    key = models.CharField(max_length=100)
+
+
 class Comment(models.Model):
     news_website = models.ForeignKey(NewsWebsite)
     stock_code = models.IntegerField(default=None)
